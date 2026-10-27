@@ -1,0 +1,1 @@
+Place the trained NH3 MACE model at models/s8.model, or pass its actual path as the second sbatch argument. No model is bundled. The launcher passes the explicit path and freezes its SHA-256 content identity.

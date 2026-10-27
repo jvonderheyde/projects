@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saga-catalysis"
+version = "0.3.0"
+description = "Surrogate-assisted genetic search of layered alloy compositions with MACE"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "scipy>=1.11,<2",
+  "ase>=3.23,<4",
+  "scikit-learn>=1.4,<2",
+]
+
+[project.optional-dependencies]
+mace = ["mace-torch>=0.3.10,<0.4"]
+plots = ["matplotlib>=3.8,<4"]
+notebooks = ["matplotlib>=3.8,<4", "jupyterlab>=4,<5"]
+
+[project.scripts]
+saga-campaign = "saga.campaign:main"
+
+[tool.setuptools.packages.find]
+include = ["saga", "saga.*"]

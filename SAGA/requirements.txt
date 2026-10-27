@@ -1,0 +1,2 @@
+# Install PyTorch for the intended CPU/CUDA platform first.
+-e .[mace,plots]

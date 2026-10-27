@@ -1,0 +1,8 @@
+include README.md CONTRIBUTING.md RELEASE_CHECKS.md campaign.json requirements.txt .gitignore
+recursive-include docs *.md
+recursive-include examples *.json *.csv *.ipynb *.png *.md
+recursive-include scripts *.py *.sh
+recursive-include tests *.py
+recursive-include models *.txt
+recursive-include .github *.yml
+global-exclude *.py[cod]
